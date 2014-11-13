@@ -1,0 +1,11 @@
+/**
+ * @file
+ * Correcting styles for contrib modules.
+ *
+ */
+
+/* If quickbar is enabled, move it above any other menu (e.g. superfish). */
+body.quickbar-enabled div#quickbar {
+  z-index: 999;
+}
+
