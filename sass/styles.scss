@@ -12,7 +12,8 @@
 @import "module-overrides";
 
 /* Load common styles for contrib modules. */
-@import "contrib";
+@import "contrib/follow";
+@import "contrib/quickbar";
 
 /* SMACSS theme rules */
 /* @import "theme-A"; */
