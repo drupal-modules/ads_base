@@ -10,6 +10,10 @@
 @import "init";
 
 @import "module-overrides";
+
+/* Load common styles for contrib modules. */
+@import "contrib";
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */
