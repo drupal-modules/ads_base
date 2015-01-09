@@ -1,0 +1,33 @@
+section.block.block-facetapi {
+
+  padding: 0 10px;
+
+  // Facet title.
+  h2 {
+    font-size: $h2-font-size;
+    margin: 0 0 0 0;
+    padding: 23px 10px 0 10px;
+  }
+
+  // Facet items.
+  .item-list > ul {
+
+    margin: 0 0 0 0;
+    padding: 23px 10px 0 27px;
+
+
+    // Facet item.
+    li {
+      background: none;
+
+      // Facet link.
+      a {
+
+      }
+    }
+
+  }
+
+
+
+}
