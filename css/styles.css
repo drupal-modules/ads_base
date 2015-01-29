@@ -16,6 +16,8 @@
 @import "components/misc.css";
 /* Optionally, add your own components here. */
 @import "print.css";
+/* Load styles for fixing contrib modules. */
+@import "contrib.css";
 
 /* SMACSS theme rules */
 /* @import "theme-A.css"; */

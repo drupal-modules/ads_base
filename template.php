@@ -8,6 +8,20 @@
  */
 
 /**
+ * Returns HTML for the facet title, usually the title of the block.
+ *
+ * @param $variables
+ *   An associative array containing:
+ *   - title: The title of the facet.
+ *   - facet: The facet definition as returned by facetapi_facet_load().
+ *
+ * @see theme_facetapi_title()
+ */
+function ads_base_facetapi_title($variables) {
+  return $variables['title'];
+} 
+
+/**
  * Implements template_preprocess_panels_pane().
  */
 function ads_base_preprocess_panels_pane(&$vars) {
