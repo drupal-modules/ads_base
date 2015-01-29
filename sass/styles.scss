@@ -20,6 +20,14 @@
 /* Load styles for admin ui. */
 @import "admin/contextual-links";
 
+/* Load styles for forms. */
+@import "forms/components/submission";
+@import "forms/advert-add-edit";
+
+/* Load styles for fonts. */
+@import "fonts/font-awesome";
+
+
 /* SMACSS theme rules */
 /* @import "theme-A"; */
 /* @import "theme-B"; */

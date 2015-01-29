@@ -1,0 +1,32 @@
+#edit-buttons {
+  #edit-next {
+    background-image: url("/sites/all/themes/ads_base/images/arrow-right-white.png");
+    background-position: 57px center;
+    background-repeat: no-repeat;
+    padding-right: 32px;
+  }
+
+  #edit-previous {
+    background-image: url("/sites/all/themes/ads_base/images/arrow-left-white.png");
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    padding-left: 32px;
+  }
+
+  #edit-cancel {
+    background-image: url("/sites/all/themes/ads_base/images/x-white.png");
+    background-position: 13px center;
+    background-repeat: no-repeat;
+    padding-left: 36px;
+    margin-right: 16px;
+  }
+
+  #edit-return {
+    background-image: url("/sites/all/themes/ads_base/images/v-white.png");
+    background-position: 13px center;
+    background-repeat: no-repeat;
+    margin-right: 16px;
+    float: right;
+    padding-left: 40px;
+  }
+}
