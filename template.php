@@ -8,6 +8,46 @@
  */
 
 /**
+ * Implements theme_ctools_wizard_trail().
+ */
+function ads_base_ctools_wizard_trail($vars) {
+
+  $action = arg(1) == 'add' ? 'add' : 'edit';
+
+  if ($action === 'add') {
+    // Advert adding action.
+    $step = substr(arg(2), 5);
+  }
+  elseif ($action === 'edit') {
+    // Advert editing action.
+    $step = substr(arg(3), 5);
+  }
+
+  if (empty($step)) {
+    $step = 1;
+  }
+
+
+  $groups_info = field_group_info_groups('node', 'advert');
+  $groups      = $groups_info['form'];
+  $step_labels = array();
+
+  foreach ($groups as $machine_name => $group) {
+    if (isset($group -> format_settings['instance_settings']['classes'])) {
+      if ($group -> format_settings['instance_settings']['classes'] == 'hidden') {
+        continue;
+      }
+    }
+
+    $step_labels[] = $group->label;
+  }
+
+  $trail = $vars['trail'];
+  if (!empty($trail)) {
+    return theme('ads_advert_wizard_trail', array('labels' => $step_labels, 'step' => $step));
+  }
+}
+/**
  * Returns HTML for the facet title, usually the title of the block.
  *
  * @param $variables
@@ -19,7 +59,7 @@
  */
 function ads_base_facetapi_title($variables) {
   return $variables['title'];
-} 
+}
 
 /**
  * Implements template_preprocess_panels_pane().
